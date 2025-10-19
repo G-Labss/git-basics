@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks page</title>
+    <link rel="stylesheet" href="tasksStyles.css">
+</head>
+<body>
+<!-- Header Section -->
+     <header class="header">
+        <h1>Tasks</h1>
+        <nav>
+            <ul>
+                <li><a href="../home page/home.html">Home</a></li>
+                <li><a href="../weather page/weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Body Section -->
+     <div class="container" id="bodyContent">
+        <select id="prioritySelect">
+            <option value="pending">Pending</option>
+            <option value="low">Low Priority</option>
+            <option value="mid">Medium Priority</option>
+            <option value="high">High Priority</option>
+            <option value="completed">Completed</option>
+        </select>
+        <input type="text" id="taskInput" placeholder="Enter Task Here"/>
+        <button id="addTaskBtn">Add Task</button>
+        <div class="taskContainer" id="pendingTasks">
+            <h3>current tasks</h3>
+            <ul class="taskList" id="pendingTaskList"></ul>
+        </div>
+        <div class="priorities">
+            <div class="taskContainer" id="low">
+                <h3>low priority</h3>
+                <ul class="taskList" id="lowPriorityTasks"></ul>
+            </div>
+            <div class="taskContainer" id="mid">
+                <h3>mid priority</h3>
+                <ul class="taskList" id="midPriorityTasks"></ul>
+            </div>
+            <div class="taskContainer" id="high">
+                <h3>high priority</h3>
+                <ul class="taskList" id="highPriorityTasks"></ul>
+            </div>
+        </div>
+        <div class="taskContainer" id="completedTasks">
+            <h3>current tasks</h3>
+            <ul class="taskList" id="completedTaskList"></ul>
+        </div>
+     </div>
+    <script src="taskScript.js"></script>
+</body>
+</html>

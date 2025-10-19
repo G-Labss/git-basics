@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: stretch;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(77, 179, 247);
+}
+
+#bodyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-align: center;
+    top: 150px;
+}
+
+#pendingTasks {
+    width: 80%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.priorities {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+#low {
+    background-color: lightgray;
+    flex: 1;
+    min-height: 150px;
+    border-radius: 15px;
+    flex-direction: column;
+    
+}
+
+#mid {
+    background-color: gold;
+    flex: 1;
+    min-height: 150px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+#high {
+    color: white;
+    background-color: darkred;
+    flex: 1;
+    min-height: 150px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+#completedTasks {
+    width: 80%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+div ul {
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+div ul.drag-over {
+  background-color: rgba(64, 124, 121, 0.856);
+  border-radius: 8px;
+}
+
+div li {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: grab;
+}
+
+div li:active {
+    cursor: grabbing;
+}
+
+.taskList {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    box-sizing: border-box;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.taskList li {
+    width: auto;
+    display: block;
+    margin: 5px 0;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather page</title>
+    <link rel="stylesheet" href="weatherStyles.css">
+</head>
+<body id="weatherPageBody">
+    <!-- Header Section -->
+     <header class="header">
+        <h1 id="headerText">Weekly Forcast</h1>
+        <nav>
+            <ul>
+                <li><a href="../home page/home.html">Home<a></li>
+                <li><a href="../tasks page/tasks.html">Tasks<a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="backgroundImage" class="container">
+        <section id="dayForcastCard" class="card">
+            <input type="text" id="locationInput" placeholder="Enter A Location Here"/>
+            <br>
+            <button id="getWeatherBtn">Check Weather</button>
+            <div id="weatherDisplay"></div>
+            <div id="weekWeatherContainer">
+                <h2 id="weekWeatherTitle"></h2>
+                <ul id="weekWeather">
+                </ul>
+            </div>
+    </div>
+    
+
+    <script src="weatherScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1eb; /* Softer antique white */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 12px;
+    background-color: rgba(30, 30, 30, 0.85);
+    color: #ffffff;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #60a5fa; /* Brighter blue for hover */
+    transform: translateY(-2px);
+}
+
+#bodyContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    text-align: center;
+    top: 140px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#pendingTasks {
+    width: 82%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.2s ease;
+}
+
+#pendingTasks:hover {
+    transform: translateY(-4px);
+}
+
+.priorities {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 85%;
+}
+
+#low {
+    background-color: #e2e8f0; /* Softer gray */
+    flex: 1;
+    min-height: 180px;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+#low:hover {
+    transform: translateY(-4px);
+}
+
+#mid {
+    background-color: #fcd34d; /* Softer gold */
+    flex: 1;
+    min-height: 180px;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+#mid:hover {
+    transform: translateY(-4px);
+}
+
+#high {
+    color: #ffffff;
+    background-color: #9b2c2c; /* Softer dark red */
+    flex: 1;
+    min-height: 180px;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+#high:hover {
+    transform: translateY(-4px);
+}
+
+#completedTasks {
+    width: 82%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f855a; /* Softer green */
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.2s ease;
+}
+
+#completedTasks:hover {
+    transform: translateY(-4px);
+}
+
+div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div ul.drag-over {
+    background-color: rgba(52, 211, 153, 0.3); /* Softer drag-over color */
+    border: 2px dashed #34d399;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+div li {
+    background-color: rgba(45, 55, 72, 0.85);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+div li:active {
+    cursor: grabbing;
+    transform: scale(0.98);
+}
+
+.taskList {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+.taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.taskList li {
+    width: auto;
+    display: block;
+    margin: 6px 0;
+}

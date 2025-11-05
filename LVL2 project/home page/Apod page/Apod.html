@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Picture of the Day</title>
+    <link rel="stylesheet" href="apodStyles.css">
+</head>
+<body id="apodPageBody">
+    <!-- Header Section -->
+    <header class="header">
+        <h1 id="headerText">NASA Astronomy Picture of the Day</h1>
+        <nav>
+            <ul>
+                <li><a href="../home page/home.html">Home</a></li>
+                <li><a href="../tasks page/tasks.html">Tasks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="backgroundImage" class="container">
+        <section id="apodCard" class="card">
+            <input type="date" id="dateInput" />
+            <br>
+            <button id="getApodBtn">Get Picture</button>
+            <div id="apodDisplay"></div>
+        </section>
+    </div>
+    <script src="apodScript.js"></script>
+</body>
+</html>
